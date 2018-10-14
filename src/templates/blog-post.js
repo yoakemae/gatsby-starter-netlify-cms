@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import ShareButtons from '../components/ShareButtons'
 
 export const BlogPostTemplate = ({
   content,
@@ -12,6 +13,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  url,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -27,6 +29,10 @@ export const BlogPostTemplate = ({
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
+            <div style={{ marginTop: `4rem` }}>
+              <h4>Share</h4>
+              <ShareButtons articleUrl={url} articleTitle={title} />
+            </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -50,12 +56,13 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post, site: { siteMetadata: { url } } } = data
 
   return (
     <Layout>
@@ -66,6 +73,7 @@ const BlogPost = ({ data }) => {
         helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        url={`${url}${post.fields.slug}`}
       />
     </Layout>
   )
@@ -81,9 +89,17 @@ export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
+    site {
+      siteMetadata {
+        url
+      }
+    }
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title

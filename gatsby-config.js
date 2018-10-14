@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'カメテック',
+    url: 'https://zen-keller-dac825.netlify.com/'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
