@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
+              <h1 className="has-text-weight-bold is-size-2">最新記事</h1>
             </div>
             {posts
               .map(({ node: post }) => (
@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component {
                     <br />
                     <br />
                     <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
+                      続きを読む →
                     </Link>
                   </p>
                 </div>
@@ -70,7 +70,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY/MM/DD")
           }
         }
       }
