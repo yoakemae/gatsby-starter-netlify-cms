@@ -9,3 +9,17 @@ tags:
   - Windows Subsystem for Linux
 ---
 <https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a>
+
+```javascript{numberLines: true}
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        `gatsby-remark-prismjs`,
+      ]
+    }
+  }
+]
+```
