@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
 import './all.sass'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
