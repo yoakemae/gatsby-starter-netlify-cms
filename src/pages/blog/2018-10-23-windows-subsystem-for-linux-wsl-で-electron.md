@@ -10,7 +10,7 @@ tags:
 ---
 <https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a>
 
-```javascript{numberLines: 5}{1,5-9}
+```javascript{numberLines: 1}
 // In your gatsby-config.js
 plugins: [
   {
