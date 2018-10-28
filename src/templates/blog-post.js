@@ -31,16 +31,18 @@ export const BlogPostTemplate = ({
             <p>{description}</p>
             <PostContent content={content} />
             <div style={{ marginTop: `4rem` }}>
-              <h4>Share</h4>
+              <h3>Share</h3>
               <ShareButtons articleUrl={url} articleTitle={title} />
             </div>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
+                <h3>Tags</h3>
                 <ul className="taglist">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      <span class="tag is-medium">
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </span>
                     </li>
                   ))}
                 </ul>

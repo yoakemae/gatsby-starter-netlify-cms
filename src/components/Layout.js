@@ -7,7 +7,7 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet title="Home | カメテック" />
     <Navbar />
     <div>{children}</div>
   </div>
