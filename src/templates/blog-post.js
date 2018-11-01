@@ -65,7 +65,7 @@ BlogPostTemplate.propTypes = {
 }
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post, site: { siteMetadata: { url } } } = data
+  const { markdownRemark: post, site: { siteMetadata: { siteUrl } } } = data
 
   return (
     <Layout>
@@ -73,10 +73,10 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        helmet={<Meta post={post} url={url} />}
+        helmet={<Meta post={post} url={siteUrl} />}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
-        url={`${url}${post.fields.slug}`}
+        url={`${siteUrl}/${post.fields.slug}`}
       />
     </Layout>
   )
@@ -94,7 +94,7 @@ export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     site {
       siteMetadata {
-        url
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {
