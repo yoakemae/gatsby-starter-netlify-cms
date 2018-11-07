@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'カメテック',
-    siteUrl: 'https://zen-keller-dac825.netlify.com'
+    siteUrl: 'https://www.kame-tech.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -37,6 +37,12 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-128905421-1",
       },
     },
     {
