@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'カメテック',
-    siteUrl: 'https://www.kame-tech.com'
+    siteUrl: 'https://www.kame-tech.com',
+    description: 'a tech blog',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -52,6 +53,10 @@ module.exports = {
       options: {
         trackingId: "UA-128905421-1",
       },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-feed`
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
