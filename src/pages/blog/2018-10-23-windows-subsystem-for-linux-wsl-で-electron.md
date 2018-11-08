@@ -8,18 +8,5 @@ tags:
   - Electron
   - Windows Subsystem for Linux
 ---
-<https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a>
+作成中
 
-```javascript{numberLines: 1}
-// In your gatsby-config.js
-plugins: [
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
-        `gatsby-remark-prismjs`,
-      ]
-    }
-  }
-]
-```
