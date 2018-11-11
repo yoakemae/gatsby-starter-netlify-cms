@@ -35,5 +35,10 @@ $ apt-file search libasound.so.2
 $ sudo apt-get install libasound2
 ```
 
-これでエラーは出なくなりましたが、何も起動しません。
+これでエラーは出なくなりましたが、まだ何も起動しません。
 
+
+## 参考
+* [ElectronをWindowsのBash\(WSL\)で試してみて成功しなかった \- いがにんのぼやき](http://igatea.hatenablog.com/entry/2018/02/11/004142)
+* [WSL上でElectronの環境構築 – にっき](https://yukushige.com/blog/?p=129)
+* [Windows Subsystem for Linux \+ VcXsrv \+ RubyMine でWindowsでも快適なRails開発環境を作ろう \- Qiita](https://qiita.com/fukuramikake/items/283b817c16725af79a28)
