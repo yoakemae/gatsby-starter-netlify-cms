@@ -21,6 +21,16 @@ error while loading shared libraries: libgtk-3.so.0: cannot open shared object f
 足りないパッケージをインストールしていきます。
 
 ```bash
-$ ./node_modules/.bin/electron ./
-error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+$ sudo apt install apt-file
+$ sudo apt-file update
+$ apt-file search libgtk-3.so.0
+$ sudo apt-get install libgtk-3-0
+$ apt-file search libXss.so.1
+$ sudo apt-get install libxss1
+$ apt-file search libgconf-2.so.4
+$ sudo apt-get install libgconf-2-4
+$ apt-file search libnss3.so
+$ sudo apt-get install libnss3
+$ apt-file search libasound.so.2
+$ sudo apt-get install libasound2
 ```
