@@ -17,8 +17,8 @@ $ ./node_modules/.bin/electron ./
 error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 ```
 
-何かのパッケージが足りない様です。
-足りないパッケージをインストールしていきます。
+共有ライブラリ(shared library)が足りない様です。  
+エラーメッセージに表示されているファイル名を`apt-file search`で調べて、調べたパッケージを`apt-get install`していきました。
 
 ```bash
 $ sudo apt install apt-file
@@ -34,3 +34,6 @@ $ sudo apt-get install libnss3
 $ apt-file search libasound.so.2
 $ sudo apt-get install libasound2
 ```
+
+これでエラーは出なくなりましたが、何も起動しません。
+
