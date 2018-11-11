@@ -13,8 +13,14 @@ tags:
 こちらのワークショップを Windows Subsystem for Linux (WSL) でやっていたら、electronの実行でエラーになりました。
 
 ```bash
-./node_modules/.bin/electron ./
+$ ./node_modules/.bin/electron ./
 error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 ```
 
+何かのパッケージが足りない様です。
+足りないパッケージをインストールしていきます。
 
+```bash
+$ ./node_modules/.bin/electron ./
+error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
+```
