@@ -35,8 +35,35 @@ $ apt-file search libasound.so.2
 $ sudo apt-get install libasound2
 ```
 
-これでエラーは出なくなりましたが、まだ何も起動しません。
+これでエラーは出なくなりましたが、まだ何も起動しません。  
+ここでかなり悩みましたが、ある勘違いをしていることに気づきました。
 
+## X Window System のインストール
+
+Electronを動かしたらWindowsのUIで表示されると思い込んでいましたが、
+WSLはLinuxなので X Window System をインストールをする必要がありました。
+
+```bash
+$ sudo apt-get install x11-apps x11-utils x11-xserver-utils fonts-ipafont
+```
+
+これでWSLに X Window System がインストールできました。
+
+## VcXsrv Windows X Server のインストール
+
+そして、次にWindowsにX Serverをインストールしました。  
+使ったのは下記のVcXsrvです。
+
+[VcXsrv Windows X Server download \| SourceForge\.net](https://sourceforge.net/projects/vcxsrv/)	
+
+そして
+
+```bash
+$ echo 'export DISPLAY=localhost:0.0' >> ~/.bashrc
+$ source ~/.bashrc
+```
+
+## 
 
 ## 参考
 * [ElectronをWindowsのBash\(WSL\)で試してみて成功しなかった \- いがにんのぼやき](http://igatea.hatenablog.com/entry/2018/02/11/004142)
