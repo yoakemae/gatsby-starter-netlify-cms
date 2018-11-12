@@ -8,7 +8,7 @@ tags:
   - Electron
   - Windows Subsystem for Linux
 ---
-<div class="box"> <article class="media"> <div class="media-left"> <a href="https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" target="_blank"> <figure class="image is-128x128"> <img src="http://capture.heartrails.com/120x120/shorten?https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" alt="Image"> </figure> </a> </div> <div class="media-content"> <div class="content"> <p> <a href="https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" target="_blank"><strong>Electron & React & Redux & TypeScript アプリ作成ワークショップ 2日目 - Qiita</strong></a> <a href="http://b.hatena.ne.jp/entry/https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" target="_blank"><img border="0" src="http://b.hatena.ne.jp/entry/image/https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" border="0" alt="" /></a> <br> Electron &amp; React &amp; Redux &amp; TypeScript アプリ作成ワークショップ 2日目 - Qiita </p> </div> </div> </article> </div>	
+<div class="box"> <article class="media"> <div class="media-left"> <a href="https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" target="_blank"> <figure class="image is-128x128"> <img src="https://capture.heartrails.com/120x120/shorten?https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" alt="Image"> </figure> </a> </div> <div class="media-content"> <div class="content"> <p> <a href="https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" target="_blank"><strong>Electron & React & Redux & TypeScript アプリ作成ワークショップ 2日目 - Qiita</strong></a> <a href="https://b.hatena.ne.jp/entry/https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" target="_blank"><img border="0" src="https://b.hatena.ne.jp/entry/image/https://qiita.com/EBIHARA_kenji/items/e6da1c3d6d16cf07b60a" border="0" alt="" /></a> <br> Electron &amp; React &amp; Redux &amp; TypeScript アプリ作成ワークショップ 2日目 - Qiita </p> </div> </div> </article> </div>	
 
 こちらのワークショップを Windows Subsystem for Linux (WSL) でやっていたら、electronの実行でエラーになりました。
 
@@ -74,7 +74,7 @@ $ ./node_modules/.bin/electron ./
 
 ## 参考
 
-* [ElectronをWindowsのBash(WSL)で試してみて成功しなかった - いがにんのぼやき](http://igatea.hatenablog.com/entry/2018/02/11/004142)
+* [ElectronをWindowsのBash(WSL)で試してみて成功しなかった - いがにんのぼやき](https://igatea.hatenablog.com/entry/2018/02/11/004142)
 * [WSL上でElectronの環境構築 – にっき](https://yukushige.com/blog/?p=129)
 * [Windows Subsystem for Linux + VcXsrv + RubyMine でWindowsでも快適なRails開発環境を作ろう - Qiita](https://qiita.com/fukuramikake/items/283b817c16725af79a28)
 
