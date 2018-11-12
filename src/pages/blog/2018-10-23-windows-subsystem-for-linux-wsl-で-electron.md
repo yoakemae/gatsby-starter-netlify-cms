@@ -40,14 +40,20 @@ $ sudo apt-get install libasound2
 
 ## X Window System のインストール
 
-Electronを動かしたらWindowsのUIで表示されると思い込んでいましたが、
+Electronを動かしたらWindowsのUIで表示されると思い込んでいましたが、  
 WSLはLinuxなので X Window System をインストールをする必要がありました。
 
 ```bash
 $ sudo apt-get install x11-apps x11-utils x11-xserver-utils fonts-ipafont
 ```
 
-これでWSLに X Window System がインストールできました。
+これでWSLに X Window System がインストールできました。  
+そして、環境変数を設定します。
+
+```bash
+$ echo 'export DISPLAY=localhost:0.0' >> ~/.bashrc
+$ source ~/.bashrc
+```
 
 ## VcXsrv Windows X Server のインストール
 
@@ -56,14 +62,14 @@ $ sudo apt-get install x11-apps x11-utils x11-xserver-utils fonts-ipafont
 
 [VcXsrv Windows X Server download \| SourceForge\.net](https://sourceforge.net/projects/vcxsrv/)	
 
-そして
+## Electronの起動
+
+ここまでやってElectronを起動すると、漸く表示できました。
 
 ```bash
-$ echo 'export DISPLAY=localhost:0.0' >> ~/.bashrc
-$ source ~/.bashrc
+$ ./node_modules/.bin/electron ./
 ```
 
-## 
 
 ## 参考
 * [ElectronをWindowsのBash\(WSL\)で試してみて成功しなかった \- いがにんのぼやき](http://igatea.hatenablog.com/entry/2018/02/11/004142)
