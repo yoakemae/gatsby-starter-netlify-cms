@@ -17,7 +17,7 @@ $ ./node_modules/.bin/electron ./
 error while loading shared libraries: libgtk-3.so.0: cannot open shared object file: No such file or directory
 ```
 
-共有ライブラリ(shared library)が足りない様です。  
+共有ライブラリ(shared library)が足りない様です。\
 エラーメッセージに表示されているファイル名を`apt-file search`で調べて、調べたパッケージを`apt-get install`していきました。
 
 ```bash
@@ -35,19 +35,19 @@ $ apt-file search libasound.so.2
 $ sudo apt-get install libasound2
 ```
 
-これでエラーは出なくなりましたが、まだ何も起動しません。  
+これでエラーは出なくなりましたが、まだ何も起動しません。\
 ここでかなり悩みましたが、ある勘違いをしていることに気づきました。
 
 ## X Window System のインストール
 
-Electronを動かしたらWindowsのUIで表示されると思い込んでいましたが、  
+Electronを動かしたらWindowsのUIで表示されると思い込んでいましたが、\
 WSLはLinuxなので X Window System をインストールをする必要がありました。
 
 ```bash
 $ sudo apt-get install x11-apps x11-utils x11-xserver-utils fonts-ipafont
 ```
 
-これでWSLに X Window System がインストールできました。  
+これでWSLに X Window System がインストールできました。\
 そして、環境変数を設定します。
 
 ```bash
@@ -57,10 +57,10 @@ $ source ~/.bashrc
 
 ## VcXsrv Windows X Server のインストール
 
-そして、次にWindowsにX Serverをインストールしました。  
+そして、次にWindowsにX Serverをインストールしました。\
 使ったのは下記のVcXsrvです。
 
-[VcXsrv Windows X Server download \| SourceForge\.net](https://sourceforge.net/projects/vcxsrv/)	
+[VcXsrv Windows X Server download | SourceForge.net](https://sourceforge.net/projects/vcxsrv/)	
 
 ## Electronの起動
 
@@ -70,10 +70,10 @@ $ source ~/.bashrc
 $ ./node_modules/.bin/electron ./
 ```
 
-
-
+![Electron](/img/electron.png)
 
 ## 参考
-* [ElectronをWindowsのBash\(WSL\)で試してみて成功しなかった \- いがにんのぼやき](http://igatea.hatenablog.com/entry/2018/02/11/004142)
+
+* [ElectronをWindowsのBash(WSL)で試してみて成功しなかった - いがにんのぼやき](http://igatea.hatenablog.com/entry/2018/02/11/004142)
 * [WSL上でElectronの環境構築 – にっき](https://yukushige.com/blog/?p=129)
-* [Windows Subsystem for Linux \+ VcXsrv \+ RubyMine でWindowsでも快適なRails開発環境を作ろう \- Qiita](https://qiita.com/fukuramikake/items/283b817c16725af79a28)
+* [Windows Subsystem for Linux + VcXsrv + RubyMine でWindowsでも快適なRails開発環境を作ろう - Qiita](https://qiita.com/fukuramikake/items/283b817c16725af79a28)
