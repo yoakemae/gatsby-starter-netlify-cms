@@ -71,6 +71,8 @@ $ ./node_modules/.bin/electron ./
 ```
 
 
+
+
 ## 参考
 * [ElectronをWindowsのBash\(WSL\)で試してみて成功しなかった \- いがにんのぼやき](http://igatea.hatenablog.com/entry/2018/02/11/004142)
 * [WSL上でElectronの環境構築 – にっき](https://yukushige.com/blog/?p=129)
