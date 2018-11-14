@@ -7,7 +7,12 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Home | カメテック" />
+    <Helmet
+      title="Home | カメテック"
+      meta={
+        [
+          { name: 'google-site-verification', content: "Rx80f9otmxoMRtPYovUaLNLCxJOljf67VUUKrPUPdog" },
+        ]} />
     <Navbar />
     <div>{children}</div>
   </div>
