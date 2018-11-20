@@ -8,12 +8,42 @@ tags:
   - Kotlin
   - 書評
 ---
+  <div class="columns" style="margin:20px">
+    <div class="column is-8">
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <a href="https://www.amazon.co.jp/exec/obidos/asin/B07HQMNLCV/kmtblog-22/">
+              <figure class="image">
+                <img src="https://images-fe.ssl-images-amazon.com/images/I/51opWCuz3YL._SL160_.jpg" alt="速習 Kotlin: Javaより簡単！新Android開発言語を今すぐマスター 速習シリーズ Kindle版" />
+              </figure>
+            </a>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="https://www.amazon.co.jp/exec/obidos/asin/B07HQMNLCV/kmtblog-22/" class="is-size-5"><strong>速習 Kotlin: Javaより簡単！新Android開発言語を今すぐマスター 速習シリーズ Kindle版</strong></a><br /><br />
+                著者: 山田 祥寛（やまだ よしひろ）<br />
+                出版社: WINGSプロジェクト (2018/9/26)<br />
+                <a href="https://www.amazon.co.jp/exec/obidos/asin/B07HQMNLCV/kmtblog-22/">Amazonで詳細を見る</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div >
+
 仕事でKotlinを使い始めたので、
+Amazonのレビューはついていなかったのですが、著者の実績に信頼して購入しました。
+
+## 
 
 ただ、下記の記述についてはちょっと気になりました。  
 
 > 執筆時点の状況としては、まずは「Kotlin = Androidアプリのための言語」と捉えておいて構わないと思います。
 
-Spring FrameworkがKotlinをサポートする様になったので、サーバーサイドでもKotlinの利用は既に広まり始めていると思います。現に私の職場でも既にサーバーサイドKotlinがプロダクション環境に導入されています。
+2018年の状況としては、この認識は古いのではないかと思います。  
+Spring FrameworkがKotlinをサポートする様になったので、サーバーサイドでもKotlinの利用は既に広まり始めてます。現に私の職場でも既にサーバーサイドKotlinがプロダクション環境に導入されています。
 
 
