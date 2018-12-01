@@ -9,6 +9,16 @@ tags:
   - Vue.js
   - PWA
 ---
+# 全体的な感想
+
+
+
+* 持続可能なプロダクト開発のために - フロントエンドと新陳代謝の話
+* 2018年のHTMLやCSSやAPIとか
+* PWA導入の成果と課題
+* コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践
+
+
 # 持続可能なプロダクト開発のために - フロントエンドと新陳代謝の話
 
 <script async class="speakerdeck-embed" data-id="e4c5528cb51d4763b686d80209ec86b2" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
