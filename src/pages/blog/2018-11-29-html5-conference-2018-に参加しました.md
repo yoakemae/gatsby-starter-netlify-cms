@@ -9,10 +9,7 @@ tags:
   - Vue.js
   - PWA
 ---
-# 全体的な感想
 
-* 
-* lighthouse
 
 * 持続可能なプロダクト開発のために - フロントエンドと新陳代謝の話
 * 2018年のHTMLやCSSやAPIとか
@@ -30,6 +27,8 @@ tags:
 
 [資料はこちら](https://www.icloud.com/keynote/0jOebxBc-KN__8ZUJKrkvugbQ#HTML5_Conference_2018)	
 
+* HTMLなどの現在の状況がざっくりと知れて、とてもありがたい内容だった。来年もあればぜひ聴きたいと思う。
+
 # PWA導入の成果と課題
 
 <script async class="speakerdeck-embed" data-id="0309b649c4ab42529afe5160c4bad351" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
@@ -42,3 +41,4 @@ tags:
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/dLP4Ilg8N2F9gC" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/linecorp/webassemblyline-123931200" title="コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践" target="_blank">コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践</a> </strong> from <strong><a href="https://www.slideshare.net/linecorp" target="_blank">LINE Corporation</a></strong> </div>
 
+* WebAssemblyを生成する言語を作ったという話。面白い話ではあったが、結局ここまでやる必要があったのかというところはちょっと疑問に思った。
