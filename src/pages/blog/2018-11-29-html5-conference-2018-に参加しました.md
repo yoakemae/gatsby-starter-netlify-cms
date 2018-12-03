@@ -9,13 +9,12 @@ tags:
   - Vue.js
   - PWA
 ---
-
+参加したセッションは下記の4つです。
 
 * 持続可能なプロダクト開発のために - フロントエンドと新陳代謝の話
 * 2018年のHTMLやCSSやAPIとか
 * PWA導入の成果と課題
 * コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践
-
 
 # 持続可能なプロダクト開発のために - フロントエンドと新陳代謝の話
 
@@ -35,10 +34,11 @@ tags:
 
 * CM一杯やっている日経電子版をPWAにした話。
 * 成果だけでなくまだできていないところも話されていて、実践的で参考になる話だった。
-* Lighthouseは知らなかったので、調べてみる。
+* Lighthouse,SpeedCurveは知らなかったので、調べてみる。
 
 # コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/dLP4Ilg8N2F9gC" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/linecorp/webassemblyline-123931200" title="コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践" target="_blank">コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践</a> </strong> from <strong><a href="https://www.slideshare.net/linecorp" target="_blank">LINE Corporation</a></strong> </div>
 
-* WebAssemblyを生成する言語を作ったという話。面白い話ではあったが、結局ここまでやる必要があったのかというところはちょっと疑問に思った。
+* WebAssemblyを生成する言語を作ったという話。
+* 面白い話ではあったが、実験的な試みとは言え結局ここまでやる必要があったのか、AssemblyScriptでは何故駄目だったのかが良くわからなかった。
