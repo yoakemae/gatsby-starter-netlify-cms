@@ -34,7 +34,33 @@ tags:
 
 * CM一杯やっている日経電子版をPWAにした話。
 * 成果だけでなくまだできていないところも話されていて、実践的で参考になる話だった。
-* Lighthouse,SpeedCurveは知らなかったので、調べてみる。
+* Lighthouse,SpeedCurveは知らなかったし、PWAも詳しくないので勉強しないと。
+
+  <div class="columns" style="margin:5px">
+    <div class="column is-8">
+      <div class="box">
+        <article class="media">
+          <div class="media-left">
+            <a href="https://www.amazon.co.jp/exec/obidos/asin/B07HQMNLCV/kmtblog-22/">
+              <figure class="image">
+                <img src="https://images-fe.ssl-images-amazon.com/images/I/51Qjw2DJhML._SL160_.jpg" alt="超速！ Webページ速度改善ガイド ── 使いやすさは「速さ」から始まる WEB+DB PRESS plus Kindle版" />
+              </figure>
+            </a>
+          </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="https://www.amazon.co.jp/exec/obidos/asin/B07JJ344WK/kmtblog-22/" class="is-size-5"><strong>超速！ Webページ速度改善ガイド ── 使いやすさは「速さ」から始まる WEB+DB PRESS plus Kindle版</strong></a><br /><br />
+                著者: 佐藤 歩、泉水 翔吾<br />
+                出版社: 技術評論社 (2018/11/14)<br />
+                <a href="https://www.amazon.co.jp/exec/obidos/asin/B07JJ344WK/kmtblog-22/">Amazonで詳細を見る</a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div >
 
 # コンパイルターゲット言語としてのWebAssembly、そしてLINEでの実践
 
@@ -42,3 +68,4 @@ tags:
 
 * WebAssemblyを生成する言語を作ったという話。
 * 面白い話ではあったが、実験的な試みとは言え結局ここまでやる必要があったのか、AssemblyScriptでは何故駄目だったのかが良くわからなかった。
+
