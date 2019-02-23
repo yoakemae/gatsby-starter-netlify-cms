@@ -7,4 +7,11 @@ image: /img/mo17923imgl7531_tp_v.jpg
 tags:
   - Windows Subsystem for Linux
 ---
-aa
+
+
+```
+$ pipenv install pandas
+...
+No versions found
+Was https://pypi.org/simple reachable?
+```
