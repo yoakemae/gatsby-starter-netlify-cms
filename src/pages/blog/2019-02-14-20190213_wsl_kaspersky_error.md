@@ -1,14 +1,12 @@
 ---
 templateKey: blog-post
 title: Windows Subsystem for Linux (WSL) で pipenv install がエラーになる
-date: 2019-02-13T15:25:25.943Z
-description: aa
+date: 2019-03-05T15:25:25.943Z
+description: wslでpipenv installしたら通信エラーになりました。
 image: /img/mo17923imgl7531_tp_v.jpg
 tags:
   - Windows Subsystem for Linux
 ---
-wslでpipenv installしたら通信エラーになりました。
-
 ```bash
 $ pipenv install pandas
 ...
